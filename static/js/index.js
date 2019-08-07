@@ -42,71 +42,20 @@ jQuery(document).ready(function ($) {
     })
 
 
-
-    $("#movie1").css("opacity", "0.00009");
-    $("#movie1").trigger("pause");
-    $("#movie1").mouseover(function () {
-        console.log("hovered 1");
-        $("#movie1").css("opacity", "1");
-        $("#movie1").trigger("play");
-    });
-    $("#movie1").mouseout(function () {
-        console.log("left the hover 1");
-        $("#movie1").css("opacity", "0.00009");
-        $("#movie1").trigger("pause");
-    });
-
-    $("#movie2").css("opacity", "0.00009");
-    $("#movie2").trigger("pause");
-    $("#movie2").mouseover(function () {
-        console.log("hovered 2");
-        $("#movie2").css("opacity", "1");
-        $("#movie2").trigger("play");
-    });
-    $("#movie2").mouseout(function () {
-        console.log("left the hover 2");
-        $("#movie2").css("opacity", "0.00009");
-        $("#movie2").trigger("pause");
-    });
-
-    $("#movie3").css("opacity", "0.00009");
-    $("#movie3").trigger("pause");
-    $("#movie3").mouseover(function () {
+    var movie = $(".movie");
+    movie.css("opacity", "0.00009");
+    movie.trigger("pause");
+    movie.mouseover(function () {
         console.log("hovered");
-        $("#movie3").css("opacity", "1");
-        $("#movie3").trigger("play");
+        $(this).css("opacity", "1");
+        $(this).trigger("play");
     });
-    $("#movie3").mouseout(function () {
+    movie.mouseout(function () {
         console.log("left the hover");
-        $("#movie3").css("opacity", "0.00009");
-        $("#movie3").trigger("pause");
+        $(this).css("opacity", "0.00009");
+        $(this).trigger("pause");
     });
 
-    $("#movie4").css("opacity", "0.00009");
-    $("#movie4").trigger("pause");
-    $("#movie4").mouseover(function () {
-        console.log("hovered");
-        $("#movie4").css("opacity", "1");
-        $("#movie4").trigger("play");
-    });
-    $("#movie4").mouseout(function () {
-        console.log("left the hover");
-        $("#movie4").css("opacity", "0.00009");
-        $("#movie4").trigger("pause");
-    });
-
-    $("#movie5").css("opacity", "0.00009");
-    $("#movie5").trigger("pause");
-    $("#movie5").mouseover(function () {
-        console.log("hovered");
-        $("#movie5").css("opacity", "1");
-        $("#movie5").trigger("play");
-    });
-    $("#movie5").mouseout(function () {
-        console.log("left the hover");
-        $("#movie5").css("opacity", "0.00009");
-        $("#movie5").trigger("pause");
-    });
 });
 
 
